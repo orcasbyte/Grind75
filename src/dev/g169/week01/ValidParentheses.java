@@ -1,6 +1,5 @@
 package dev.g169.week01;
 
-import java.util.List;
 import java.util.Stack;
 
 /**
