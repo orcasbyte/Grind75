@@ -1,18 +1,26 @@
-package dev.g169.week01;
+package dev.g169.week7;
 
 import java.util.Stack;
 
 /**
  * <h1>Valid Parentheses</h1>
- * <p><span>🔗 Link: </span><span>https://leetcode.com/problems/valid-parentheses/description/</span></p>
- * <p><span>💪🏼 Difficulty: </span><strong style="color: green">Easy</strong></p>
- * <p><span>🏷️ Topics: </span><span>String, Stack</span></p>
+ * <p>
+ * <span>🔗 Link:
+ * </span><span>https://leetcode.com/problems/valid-parentheses/description/</span>
+ * </p>
+ * <p>
+ * <span>💪🏼 Difficulty: </span><strong style="color: green">Easy</strong>
+ * </p>
+ * <p>
+ * <span>🏷️ Topics: </span><span>String, Stack</span>
+ * </p>
  */
 public class ValidParentheses {
 
     private static boolean isValid(String s) {
         // even numbers of characters
-        if (s.length() % 2 != 0) return false;
+        if (s.length() % 2 != 0)
+            return false;
 
         Stack<Character> stack = new Stack<>();
 
@@ -21,12 +29,16 @@ public class ValidParentheses {
                 stack.push(c);
             else {
                 // stack should not get empty when characters are still left
-                if (stack.isEmpty()) return false;
-                
+                if (stack.isEmpty())
+                    return false;
+
                 char openParantheses = stack.pop();
-                if (c == ')' && openParantheses != '(') return false;
-                if (c == '}' && openParantheses != '{') return false;
-                if (c == ']' && openParantheses != '[') return false;
+                if (c == ')' && openParantheses != '(')
+                    return false;
+                if (c == '}' && openParantheses != '{')
+                    return false;
+                if (c == ']' && openParantheses != '[')
+                    return false;
             }
         }
 

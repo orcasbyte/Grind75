@@ -1,4 +1,4 @@
-package dev.g169.week01;
+package dev.g169.week6;
 
 class ListNode {
     int val;

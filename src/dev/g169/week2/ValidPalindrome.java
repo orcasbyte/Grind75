@@ -1,4 +1,4 @@
-package dev.g169.week01;
+package dev.g169.week2;
 
 /**
  * <h1>Valid Palindrome</h1>

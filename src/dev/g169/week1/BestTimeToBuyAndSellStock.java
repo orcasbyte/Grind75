@@ -1,4 +1,4 @@
-package dev.g169.week01;
+package dev.g169.week1;
 
 /**
  * <h1>Best Time to Buy and Sell Stock</h1>
